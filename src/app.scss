@@ -1,3 +1,141 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400&display=swap');
 
-@import 'header';
+
+// reset
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+// header
+
+header {
+
+    padding: 1rem 0;
+    background-color: #202020;
+
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            padding: 0 .25rem;
+
+            a {
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+                color: #f8f8f8 !important;
+            }
+        }
+        
+    }
+}
+
+
+.content {
+    padding: 4rem 0;
+}
+
+
+
+.hero-home {
+    padding: 30px;
+    background: #008C9A;
+    margin-bottom: 3rem;
+}
+
+
+.cat-home {
+
+    margin-bottom: 3rem;
+
+    .category-home {
+        text-align: center;
+        height: 260px;
+        width: 100%;
+        background: #008C9A;
+        color: #fff;
+
+
+    }
+}
+
+
+.widget {
+    list-style-type: none;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+.list-group {
+
+    .is-active {
+        background-color: rgb(230, 230, 230);
+    }
+
+    .list-group-item {
+        margin-bottom: 0px;
+    }
+
+}
+
+footer {
+    height: 300px;
+    background-color: #f0f0f0;
+}
+
+
+
+// woocommerce
+
+.woocommerce {
+
+    .woocommerce-input-wrapper {
+        width: 100%;
+        display: block;
+    }
+
+
+    .products {
+
+        li {
+
+            .woocommerce-loop-product__title {
+                color: #777777;
+                text-transform: uppercase;
+            }
+
+            .price {
+                color: #777777 !important;
+                font-weight: 600 !important;
+                font-size: .9em;
+            }
+
+            .button .product_type_simple {
+                text-transform: uppercase;
+            } 
+        }
+    }
+
+
+    .cart_item {
+        a {
+            color: #202020;
+        }
+    }
+
+}

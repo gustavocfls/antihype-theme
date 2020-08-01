@@ -22,18 +22,3 @@ img {
     height: auto;
 }
 
-
-.hero-home {
-    padding: 30px;
-    background: #008C9A;
-    border-radius: 10px;
-}
-
-
-.category-home {
-    text-align: center;
-    height: 260px;
-    width: 100%;
-    background: #008C9A;
-    color: #fff;
-}
