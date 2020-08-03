@@ -47,7 +47,7 @@
  	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Minha Conta','woothemes'); ?>"><?php _e('Minha Conta','woothemes'); ?></a>
  <?php } 
  else { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('<span class="user"></span>','woothemes'); ?>"><?php _e('<span class="user"></span>','woothemes'); ?></a>
+ 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Minha conta','woothemes'); ?>"><?php _e('Minha conta','woothemes'); ?></a>
  <?php } ?>
 
 <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
@@ -57,3 +57,21 @@
 
         </div>
     </header>
+
+    <section>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4">
+                    Frete Grátis acima de R$ 600
+                </div>
+
+                <div class="col-lg-4">
+                    Frete Grátis acima de R$ 600
+                </div>
+
+                <div class="col-lg-4">
+                    Frete Grátis acima de R$ 600
+                </div>
+            </div>
+        </div>
+    </section>
