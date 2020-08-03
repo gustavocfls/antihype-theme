@@ -23,19 +23,19 @@
 
       <div class="col-md-4">
         <div class="category-home d-flex align-items-center justify-content-center">
-          <h2>Shoes</h2>
+          <h2>Sneakers</h2>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="category-home d-flex align-items-center justify-content-center">
-          <h2>Shoes</h2>
+          <h2>Roupas</h2>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="category-home d-flex align-items-center justify-content-center">
-          <h2>Shoes</h2>
+          <h2>Acessórios</h2>
         </div>
       </div>
 
