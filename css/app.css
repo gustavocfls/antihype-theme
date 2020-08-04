@@ -9701,6 +9701,26 @@ header .menu li a {
   color: #f8f8f8 !important;
 }
 
+header .menu-right {
+  font-size: 20px;
+}
+
+header .menu-right a {
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+header .cart-customlocation .cartcounter {
+  position: absolute;
+  background-color: #6c757d;
+  right: 2px;
+  top: -5px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 0px 5px;
+  z-index: -2;
+}
+
 .subheader {
   padding: .5rem;
   background-color: #f8f8f8;
@@ -9725,10 +9745,27 @@ header .menu li a {
 
 .cat-home .category-home {
   text-align: center;
-  height: 260px;
+  height: 400px;
   width: 100%;
-  background: #008C9A;
   color: #fff;
+}
+
+.cat-home .sneakers {
+  background: url("../img/sneakers.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cat-home .roupas {
+  background: url("../img/roupas.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cat-home .acessorios {
+  background: url("../img/acessorios.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .widget {
@@ -9747,6 +9784,12 @@ header .menu li a {
 
 .list-group .list-group-item {
   margin-bottom: 0px;
+}
+
+.input-text {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 5px;
 }
 
 footer {
@@ -9776,4 +9819,28 @@ footer {
 
 .woocommerce .cart_item a {
   color: #202020;
+}
+
+.woocommerce span.onsale {
+  font-family: 'Oswald', sans-serif;
+  min-height: 0;
+  min-width: 0;
+  padding: 10px 12px;
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+  line-height: normal;
+  top: -.5em;
+  left: -.5em;
+  margin: 0;
+  border-radius: 4px;
+  background-color: #dc3545;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1em;
+  z-index: 9;
+}
+
+.woocommerce .product p.price, .woocommerce .product span.price {
+  color: #6c757d !important;
 }

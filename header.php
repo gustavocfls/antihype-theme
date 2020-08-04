@@ -35,29 +35,28 @@
 </div>
 
 
-<div class="col-2 text-right">
+<div class="col-2 text-right menu-right">
 
 
 <?php 
 
-$iconcart = "<i class='fas fa-shopping-bag'></i>" ;
-$iconaccount = "<i class='far fa-user'></i>";
+$iconcart = "<i class='far fa-user'></i>" ;
+$iconaccount = "<i class='fas fa-user'></i>";
 $iconwishlist = "<i class='far fa-heart'></i>";
 
 ?>
 
-<div class="#">
- <span>Olá, Gustavo!</span>
-</div>
 
 <?php if ( is_user_logged_in() ) { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( $iconaccount,'woothemes'); ?>"><?php _e( $iconaccount,'woothemes'); ?></a>
+ 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><i class="fas fa-user-circle"></i> Visitante</a>
  <?php } 
  else { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( $iconaccount,'woothemes'); ?>"> <?php _e( $iconaccount,'woothemes'); ?></a>
+ 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><i class="fas fa-user-circle"></i> entrar</a>
  <?php } ?>
 
-<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>"><?php echo sprintf ( _n( '$iconcart %d', '$iconcart %d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></a>
+<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>"><i class="fas fa-shopping-cart"></i> <div class="cartcounter"><?php echo sprintf ( _n(  '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> </div></a>
+
+
 
 </div>
         </div>

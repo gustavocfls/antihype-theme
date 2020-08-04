@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<section>
-  <div class="hero-home">
+<section class="hero-home">
+  <div class="container">
     <div class="row d-flex align-items-center">
       
-      <div class="col-md-6 text-center">
+      <div class="col-md-6">
         <h1>40% off <br><small>with promo code</small></h1>
-        <button type="button" class="btn btn-outline-light">View more</button>
+        <button type="button" class="btn btn-outline-light">comprar agora</button>
       </div>
 
       <div class="col-md-6">
@@ -22,19 +22,19 @@
     <div class="row">
 
       <div class="col-md-4">
-        <div class="category-home d-flex align-items-center justify-content-center">
+        <div class="category-home d-flex align-items-center justify-content-center sneakers">
           <h2>Sneakers</h2>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="category-home d-flex align-items-center justify-content-center">
+        <div class="category-home d-flex align-items-center justify-content-center roupas">
           <h2>Roupas</h2>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="category-home d-flex align-items-center justify-content-center">
+        <div class="category-home d-flex align-items-center justify-content-center acessorios">
           <h2>Acessórios</h2>
         </div>
       </div>
@@ -44,7 +44,7 @@
 </section>
 
 <div class="container woocommerce">
-  <h1>best sellers</h1>
+  <h1>Mais vendidos</h1>
 <ul class="products">
 	<?php
 		$args = array(
