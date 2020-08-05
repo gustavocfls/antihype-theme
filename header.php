@@ -38,23 +38,21 @@
 <div class="col-2 text-right menu-right">
 
 
-<?php 
+<a href="#">
 
-$iconcart = "<i class='far fa-user'></i>" ;
-$iconaccount = "<i class='fas fa-user'></i>";
-$iconwishlist = "<i class='far fa-heart'></i>";
+<img src="<?php bloginfo('template_directory')?>/img/heart.svg" class="fluid-img" alt="" width="25px">
 
-?>
-
+</a>
 
 <?php if ( is_user_logged_in() ) { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><i class="fas fa-user-circle"></i> Visitante</a>
+ 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><img src="<?php bloginfo('template_directory')?>/img/user.svg" class="fluid-img" alt=""> </a>
  <?php } 
  else { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><i class="fas fa-user-circle"></i> entrar</a>
+ 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><img src="<?php bloginfo('template_directory')?>/img/user.svg" class="fluid-img" alt=""> </a>
  <?php } ?>
 
-<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>"><i class="fas fa-shopping-cart"></i> <div class="cartcounter"><?php echo sprintf ( _n(  '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> </div></a>
+
+<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>"><img src="<?php bloginfo('template_directory')?>/img/cart.svg" class="fluid-img" alt=""> <div class="cartcounter"><?php echo sprintf ( _n(  '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> </div></a>
 
 
 
