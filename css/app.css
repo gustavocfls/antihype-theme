@@ -9710,6 +9710,10 @@ header .menu-right a {
   margin-left: 20px;
 }
 
+header .menu-right a:hover {
+  text-decoration: none !important;
+}
+
 header .cart-customlocation .cartcounter {
   position: absolute;
   background-color: #6c757d;

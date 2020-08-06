@@ -51,6 +51,10 @@ header {
         a {
             color: #ffffff;
             margin-left: 20px;
+
+            &:hover {
+                text-decoration: none !important;
+            }
         }
     }
 
