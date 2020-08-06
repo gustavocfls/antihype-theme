@@ -69,6 +69,36 @@ register_sidebar (
 );
 
 
+register_sidebar (
+    array (
+        'name' => 'Footer Left',
+        'id' => 'footer-left',
+        'class' => '',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    )
+);
+
+register_sidebar (
+    array (
+        'name' => 'Footer Middle',
+        'id' => 'footer-mid',
+        'class' => '',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    )
+);
+
+register_sidebar (
+    array (
+        'name' => 'Footer Right',
+        'id' => 'footer-right',
+        'class' => '',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    )
+);
+
 function mytheme_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
