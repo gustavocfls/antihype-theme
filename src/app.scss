@@ -159,8 +159,22 @@ header {
 
 
 footer {
-    height: 300px;
+    padding: 80px 0;
     background-color: #f0f0f0;
+
+    .menu-footer {
+
+        h4 {
+            margin-bottom: 20px;
+        }
+        ul {
+            li {
+                a {
+                    color: #6c757d;
+                }
+            }
+        }
+    }
 }
 
 

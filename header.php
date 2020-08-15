@@ -18,7 +18,7 @@
             <div class="row d-flex align-items-center justify-content-between">
 
             <div class="col-2">
-                <img src="<?php bloginfo('template_directory')?>/img/logo.svg" class="fluid-img logo" alt="">
+               <a href="<?php bloginfo('home') ?>"> <img src="<?php bloginfo('template_directory')?>/img/logo.svg" class="fluid-img logo" alt=""> </a>
             </div>
 <div class="col text-center">
             <?php 
@@ -52,7 +52,21 @@
  <?php } ?>
 
 
-<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>"><img src="<?php bloginfo('template_directory')?>/img/cart.svg" class="fluid-img" alt=""> <div class="cartcounter"><?php echo sprintf ( _n(  '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> </div></a>
+
+ <?php
+if ( class_exists( 'WooCommerce' ) ) { ?>
+
+    <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>"><img src="<?php bloginfo('template_directory')?>/img/cart.svg" class="fluid-img" alt=""> <div class="cartcounter"><?php echo sprintf ( _n(  '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> </div></a>
+
+<?php
+
+} else {
+    ?>
+    <p>não ta ativado</p>
+<?php
+}
+?>
+
 
 
 
