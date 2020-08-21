@@ -1,12 +1,16 @@
 <?php
 
 
+// Include custom navwalker
+require_once('bs4navwalker.php');
+
+
 function antihype_theme_support() {
     add_theme_support('title-tag');
 }
 
-add_action('after_setup_theme', 'antihype_theme_support');
 
+add_action('after_setup_theme', 'antihype_theme_support');
 
 
 function load_stylesheets() {
@@ -17,8 +21,8 @@ function load_stylesheets() {
     wp_enqueue_style('custom');
 }
 
-add_action('wp_enqueue_scripts', 'load_stylesheets');
 
+add_action('wp_enqueue_scripts', 'load_stylesheets');
 
 
 function load_javascript(){
@@ -124,3 +128,13 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
+
+
+
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
+    return array(
+    'width' => 320,
+    'height' => 480,
+    'crop' => 0,
+    );
+    } );

@@ -1,12 +1,10 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 
 // reset
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -14,71 +12,121 @@ body {
 }
 
 
+@media (min-width: 1200px){
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1280px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .customer-menu {
+        
+        padding: 15px !important;
+        background: #f8f9fa;
+        border-radius: 8px;
+
+        text-align: left !important;
+
+    }
+
+    .li-cart {
+        float: right;
+        padding-right: 20px;
+    }
+    
+
+  }
 
 // header
 
 header {
 
     padding: 1rem 0;
-    background-color: #202020;
+    background-color: #ffffff;
 
     .logo {
         min-width: 150px;
     }
 
-    .menu {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-            display: inline;
-            padding: 0 .25rem;
-
-            a {
-                font-family: 'Oswald', sans-serif;
-                text-transform: uppercase;
-                color: #f8f8f8 !important;
-            }
-        }
-        
+    .navbar-light .navbar-nav .nav-link{
+        color: #777777;
+        text-transform: uppercase;
+        font-size: 12px;  
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;      
     }
-
-
-    .menu-right {
-        font-size: 20px;
-
-        a {
-            color: #ffffff;
-            margin-left: 20px;
-
-            &:hover {
-                text-decoration: none !important;
-            }
-        }
-    }
-
-
 
     .cart-customlocation {
+        position: relative;
+
         .cartcounter {
             position: absolute;
-            background-color: #6c757d;
-            right: 2px;
+            right: -16px;
             top: -5px;
             border-radius: 5px;
             font-size: 12px;
+            font-weight: 600;
             padding: 0px 5px;
-            z-index: -2;
+            color: #777777;
         }
     }
+
+    .customer-menu {
+
+        
+
+        margin: 0;
+        padding: 0;
+
+        text-align: right;
+        padding-right: 20px;
+
+
+        li {
+            list-style: none;
+            display: inline-block;
+
+            
+
+            &:first-child {
+                margin-right: 20px;
+
+                img {
+                    margin-right: 5px;
+                    margin-top: -3px;
+                }
+            }
+
+            img {
+                margin-top: -3px;
+            }
+
+            a {
+                color: #777777;
+                transition: color 0.3s;
+                font-size: 12px;
+                text-transform: uppercase;
+                vertical-align: middle;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;  
+
+                &:hover {
+                    text-decoration: none;
+                    color: #cccccc;
+                }
+            }
+        }
+    }
+
+    
 }
 
 .subheader {
     padding: .5rem;
     background-color: #f8f8f8;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 
 }
@@ -219,7 +267,7 @@ footer {
 
 
     span.onsale {
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         min-height: 0;
         min-width: 0;
         padding: 10px 12px;

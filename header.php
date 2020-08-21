@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
     <script src="https://kit.fontawesome.com/1a2737567a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,38 +18,62 @@
 
             <div class="row d-flex align-items-center justify-content-between">
 
-            <div class="col-2">
-               <a href="<?php bloginfo('home') ?>"> <img src="<?php bloginfo('template_directory')?>/img/logo.svg" class="fluid-img logo" alt=""> </a>
-            </div>
-<div class="col text-center">
-            <?php 
+<div class="col-lg-9 col-md-8">
 
-                wp_nav_menu (
-                    array (
-                        'theme_location' => 'top-menu',
-                        'menu-class' => 'menu',
-                    )
-                );
-
-            ?>
+    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+    <a class="navbar-brand" href="<?php bloginfo('home') ?>">ANTIHYPE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <?php
+    wp_nav_menu([
+        'menu'            => 'top',
+        'theme_location'  => 'top-menu',
+        'container'       => 'div',
+        'container_id'    => 'bs4navbar',
+        'container_class' => 'collapse navbar-collapse',
+        'menu_id'         => false,
+        'menu_class'      => 'navbar-nav mr-auto',
+        'depth'           => 2,
+        'fallback_cb'     => 'bs4navwalker::fallback',
+        'walker'          => new bs4navwalker()
+    ]);
+    ?>
+    </nav>
 
 </div>
 
 
-<div class="col-2 text-right menu-right">
+
+<div class="col-lg-3 col-md-4">
 
 
+<ul class="customer-menu">
+
+
+<!-- <li>
 <a href="#">
 
-<img src="<?php bloginfo('template_directory')?>/img/heart.svg" class="fluid-img" alt="" width="25px">
+
+    <img src="<?php bloginfo('template_directory')?>/img/heart.svg" class="fluid-img" alt="" width="25px"> Favoritos
+
 
 </a>
+</li> -->
 
 <?php if ( is_user_logged_in() ) { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><img src="<?php bloginfo('template_directory')?>/img/user.svg" class="fluid-img" alt=""> </a>
+ 	
+    <li>
+        <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><img src="<?php bloginfo('template_directory')?>/img/user.svg" class="fluid-img" alt=""> Minha conta </a>
+    </li>
+    
  <?php } 
  else { ?>
- 	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><img src="<?php bloginfo('template_directory')?>/img/user.svg" class="fluid-img" alt=""> </a>
+
+    <li>
+    	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e( 'Minha conta','woothemes'); ?>"><img src="<?php bloginfo('template_directory')?>/img/user.svg" class="fluid-img" alt=""> Entrar / Registrar </a>
+    </li>
+
  <?php } ?>
 
 
@@ -56,18 +81,29 @@
  <?php
 if ( class_exists( 'WooCommerce' ) ) { ?>
 
-    <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>"><img src="<?php bloginfo('template_directory')?>/img/cart.svg" class="fluid-img" alt=""> <div class="cartcounter"><?php echo sprintf ( _n(  '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> </div></a>
+    <li class="li-cart">
+        <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'Ver carrinho' ); ?>">
+        
+            <img src="<?php bloginfo('template_directory')?>/img/cart.svg" class="fluid-img" alt=""> 
+            
+            <div class="cartcounter">
+                <?php echo sprintf ( _n(  '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
+            </div> 
+
+        </a>
+        
+    </li>
 
 <?php
 
 } else {
     ?>
-    <p>não ta ativado</p>
+    <li>não ta ativado</li>
 <?php
 }
 ?>
 
-
+</ul>
 
 
 </div>
@@ -75,21 +111,3 @@ if ( class_exists( 'WooCommerce' ) ) { ?>
 
         </div>
     </header>
-
-    <section class="subheader">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-4">
-                <i class="fas fa-shipping-fast"></i> enviamos para todo o brasil
-                </div>
-
-                <div class="col-lg-4">
-                <i class="far fa-credit-card"></i> compra segura com pagseguro
-                </div>
-
-                <div class="col-lg-4">
-                <i class="fas fa-tshirt"></i> produtos exclusivos
-                </div>
-            </div>
-        </div>
-    </section>
