@@ -20,6 +20,12 @@
     </div>
 </div>
 
+<div class="container text-center">
+    <div class="credits">
+        <p>SCAFELI STORE CNPJ 20.330.746/0001-70 | Rua Bahia, Qd 26, Lt 02 | Itaboraí - RJ <br> 24859-104 © 2014 - 2020, SCAFELI STORE. Todos os direitos reservados. </p>
+    </div>
+</div>
+
 </footer>
 
 

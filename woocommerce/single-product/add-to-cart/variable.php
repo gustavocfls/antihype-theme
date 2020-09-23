@@ -54,6 +54,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		</table>
 
 		<div class="single_variation_wrap">
+		
 			<?php
 				/**
 				 * Hook: woocommerce_before_single_variation.

@@ -48,7 +48,6 @@ register_nav_menus (
 add_image_size('post_image', 1100, 550, false);
 
 
-
 // add a widget
 
 register_sidebar (
@@ -130,11 +129,48 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 }
 
 
+add_action( 'after_setup_theme', 'yourtheme_setup' );
+ 
+function yourtheme_setup() {
+    // add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
+}
+
+
+add_filter( 'woocommerce_get_image_size_single', function( $size ) {
+    return array(
+    'width' => 600,
+    'height' => 800,
+    'crop' => 1,
+    );
+   } );
+
+
+add_filter( 'woocommerce_get_image_size_thumbnail', function( $size ) {
+    return array(
+    'width' => 370,
+    'height' => 490,
+    'crop' => 1,
+    );
+   } );
+
 
 add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
-    return array(
-    'width' => 320,
-    'height' => 480,
-    'crop' => 0,
-    );
-    } );
+ return array(
+ 'width' => 150,
+ 'height' => 150,
+ 'crop' => 1,
+ );
+} );
+
+
+/**
+ * Change number or products per row to 3
+ */
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 4; // 3 products per row
+	}
+}
