@@ -32,7 +32,7 @@ header {
 }
 
 header .navbar-light .navbar-brand {
-  width: 180px;
+  width: 120px;
 }
 
 header .navbar-light .navbar-nav .nav-link {
@@ -165,8 +165,20 @@ header .customer-menu li a:hover {
   margin: 0;
 }
 
+.woocommerce-MyAccount-content a {
+  color: #909090;
+}
+
+.list-group a {
+  color: #303030 !important;
+}
+
 .list-group .is-active {
   background-color: #e6e6e6;
+}
+
+.list-group .is-active a {
+  font-weight: 700;
 }
 
 .list-group .list-group-item {

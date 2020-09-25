@@ -21,7 +21,7 @@
 
 <div class="container woocommerce">
 
-  <h1>Mais vendidoooos</h1>
+  <h1>Mais vendidos</h1>
 
 
   <ul class="products columns-4">
