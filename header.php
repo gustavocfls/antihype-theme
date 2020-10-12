@@ -102,7 +102,7 @@ if ( class_exists( 'WooCommerce' ) ) { ?>
 
 } else {
     ?>
-    <li>não ta ativado</li>
+    <li>WooCommerce não instalado!</li>
 <?php
 }
 ?>
