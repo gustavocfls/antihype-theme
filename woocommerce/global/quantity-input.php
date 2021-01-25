@@ -29,7 +29,7 @@ if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity">
 		<?php do_action( 'woocommerce_before_quantity_input_field' ); ?>
-		<label class="lb-qty" for="<?php echo esc_attr( $input_id ); ?>">Quantidade</label>
+		<label class="lb-qty" for="<?php echo esc_attr( $input_id ); ?>"></label>
 		<!-- <label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?> Quantidade</label> -->
 		<input
 			type="number"

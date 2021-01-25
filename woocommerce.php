@@ -9,6 +9,8 @@
             <div class="col-lg-12">
 
        
+            <?php woocommerce_breadcrumb(); ?>
+
 
             <?php woocommerce_content(); ?>
             

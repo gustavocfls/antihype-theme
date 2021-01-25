@@ -4,6 +4,25 @@
 // Include custom navwalker
 require_once('bs4navwalker.php');
 
+/**
+ * Rename "home" in breadcrumb
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_home_text' );
+function wcc_change_breadcrumb_home_text( $defaults ) {
+	$defaults['home'] = 'Banned';
+	return $defaults;
+}
+
+/**
+ * Change the breadcrumb separator
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
+function wcc_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimeter from '/' to '>'
+	$defaults['delimiter'] = ' ─ ';
+	return $defaults;
+}
+
 
 function antihype_theme_support() {
     add_theme_support('title-tag');
