@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -184,18 +185,83 @@ footer .menu-footer ul li a {
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
   background: #0ECC7A;
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   padding: 15px;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 500;
   transition: all ease 0.3s;
 }
 
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
   background: #0D9F60;
+}
+
+.woocommerce #customer_login {
+  margin-top: 30px;
+}
+
+.woocommerce .entrar h2 {
+  font-size: 26px;
+}
+
+.woocommerce .cadastrar h2 {
+  font-size: 26px;
+}
+
+.woocommerce form.register {
+  margin: 0;
+}
+
+.woocommerce form.register button {
+  width: 100%;
+  float: none;
+  background-color: #0ECC7A;
+  color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.woocommerce form.register button:hover {
+  background-color: #0eaf69;
+  color: #fff;
+}
+
+.woocommerce form.login {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.woocommerce form.login label {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.woocommerce form.login .lost_password a {
+  color: #777777 !important;
+}
+
+.woocommerce form.login .password-input {
+  width: 100%;
+}
+
+.woocommerce form.login button {
+  width: 100%;
+  float: none;
+  background-color: #0ECC7A;
+  color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.woocommerce form.login button:hover {
+  background-color: #0eaf69;
+  color: #fff;
 }
 
 .woocommerce .woocommerce-input-wrapper {
@@ -271,7 +337,7 @@ footer .menu-footer ul li a {
   min-height: 0;
   min-width: 0;
   padding: 10px 12px;
-  font-weight: 400;
+  font-weight: 600;
   position: absolute;
   text-align: center;
   line-height: normal;
@@ -279,10 +345,10 @@ footer .menu-footer ul li a {
   left: -.5em;
   margin: 0;
   border-radius: 4px;
-  background-color: #dc3545;
+  background-color: #0ecc7a;
   text-transform: uppercase;
   color: #fff;
-  font-size: .5em;
+  font-size: 10px;
   letter-spacing: .1rem;
   z-index: 9;
 }
@@ -298,22 +364,117 @@ footer .menu-footer ul li a {
   font-weight: 500;
 }
 
+.woocommerce .woocommerce-product-details__short-description ul {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
+.woocommerce .woocommerce-product-details__short-description ul li {
+  list-style: none;
+}
+
+.woocommerce .woocommerce-product-details__short-description ul li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.woocommerce .woocommerce #respond input#submit.alt.disabled, .woocommerce .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce .woocommerce #respond input#submit.alt:disabled, .woocommerce .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce .woocommerce a.button.alt.disabled, .woocommerce .woocommerce a.button.alt.disabled:hover, .woocommerce .woocommerce a.button.alt:disabled, .woocommerce .woocommerce a.button.alt:disabled:hover, .woocommerce .woocommerce a.button.alt:disabled[disabled], .woocommerce .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce .woocommerce button.button.alt.disabled, .woocommerce .woocommerce button.button.alt.disabled:hover, .woocommerce .woocommerce button.button.alt:disabled, .woocommerce .woocommerce button.button.alt:disabled:hover, .woocommerce .woocommerce button.button.alt:disabled[disabled], .woocommerce .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce .woocommerce input.button.alt.disabled, .woocommerce .woocommerce input.button.alt.disabled:hover, .woocommerce .woocommerce input.button.alt:disabled, .woocommerce .woocommerce input.button.alt:disabled:hover, .woocommerce .woocommerce input.button.alt:disabled[disabled], .woocommerce .woocommerce input.button.alt:disabled[disabled]:hover {
+  background-color: #909090;
+}
+
 .product .input-text {
   width: 100% !important;
 }
 
 .product .qty {
+  margin-top: 10px;
   margin-bottom: 10px;
+  max-width: 100%;
+  min-width: 75%;
+  display: none;
+}
+
+.product .variations {
+  margin-top: 30px;
+}
+
+.product .variations .value select {
+  width: 100% !important;
+}
+
+.product .variations .reset_variations {
+  color: #909090;
+  float: right;
+  margin-top: 5px;
+}
+
+.product .product_meta {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #BBBFC3;
+}
+
+.product .product_meta .sku_wrapper {
   width: 100%;
+  display: inline-block;
+}
+
+.product .product_meta .sku_wrapper:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.product .product_meta .posted_in {
+  width: 100%;
+  display: inline-block;
+}
+
+.product .product_meta .posted_in:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .product .product_meta .posted_in a {
-  color: #777777 !important;
+  color: #BBBFC3 !important;
+}
+
+.product .product_meta .tagged_as {
+  width: 100%;
+  display: inline-block;
+}
+
+.product .product_meta .tagged_as:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.product .product_meta .tagged_as a {
+  color: #BBBFC3 !important;
 }
 
 .product .related {
   width: 100%;
   display: inline-block;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 30px;
+  margin-top: 10px;
+}
+
+button.disabled {
+  background-color: #909090 !important;
 }
 
 .woocommerce-cart-form__contents .coupon .input-text {
@@ -366,4 +527,27 @@ footer .menu-footer ul li a {
   float: none !important;
   width: 90% !important;
   padding-bottom: 12px;
+}
+
+.woocommerce-ordering select {
+  border: 1px solid #e1e1e1;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 1rem 0 2rem;
+  }
+  .woocommerce-ordering {
+    margin: -.5em 0 1em !important;
+    float: none;
+    width: 100%;
+  }
+  .woocommerce-ordering select {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
 }

@@ -22,7 +22,8 @@
 
 <div class="container text-center">
     <div class="credits">
-        <p>Banned ─ Todos os direitos reservados.</p>
+        <p>Banned ─ Loja Exemplo</p>
+        <p>Todo conteúdo pertence aos seus respectivos criadores.</p>
         <p>Feito com ❤️ por Gustavo Souza</p>
     </div>
 </div>
