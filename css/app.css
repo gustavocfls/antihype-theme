@@ -7,6 +7,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1280px;
@@ -33,6 +38,11 @@ header {
 
 header .navbar {
   padding-left: 0px;
+}
+
+header .navbar-brand {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 header .navbar-light .navbar-brand {
@@ -161,7 +171,7 @@ header .customer-menu li a:hover {
 
 footer {
   padding: 80px 0;
-  background-color: #f0f0f0;
+  background-color: #f7f6f7;
 }
 
 footer .menu-footer h4 {
@@ -294,6 +304,51 @@ footer .menu-footer ul li a {
 
 .product .qty {
   margin-bottom: 10px;
+  width: 100%;
+}
+
+.product .product_meta .posted_in a {
+  color: #777777 !important;
+}
+
+.product .related {
+  width: 100%;
+  display: inline-block;
+}
+
+.woocommerce-cart-form__contents .coupon .input-text {
+  width: 200px !important;
+}
+
+.woocommerce-message {
+  border-top: none;
+  border-radius: 10px;
+}
+
+.woocommerce-message a {
+  background: none !important;
+  padding: 4px 2px !important;
+}
+
+.woocommerce-info {
+  border-top: none;
+  border-radius: 10px;
+}
+
+.woocommerce-info a {
+  background: none !important;
+  padding: 4px 2px !important;
+}
+
+.edit-account fieldset legend {
+  padding-top: 30px;
+}
+
+.edit-account fieldset p label {
+  display: inline-block;
+}
+
+.edit-account fieldset p .password-input {
   width: 100%;
 }
 

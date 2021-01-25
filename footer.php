@@ -22,7 +22,7 @@
 
 <div class="container text-center">
     <div class="credits">
-        <p>Banned. Todos os direitos reservados. <br>CNPJ 20.330.746/0001-70</p>
+        <p>Banned ─ Todos os direitos reservados.</p>
         <p>Feito com ❤️ por Gustavo Souza</p>
     </div>
 </div>
