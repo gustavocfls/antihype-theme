@@ -661,6 +661,54 @@ button.disabled {
         padding: 1rem 0 2rem;
     }
 
+    .woocommerce-product-gallery {
+
+
+        width: 100%;
+        // background: #f90;
+        display: inline-grid;
+
+       
+        .flex-viewport {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    .shop_table  {
+
+        .quantity {
+            .qty {
+                width: 100% !important;
+                margin-top: 7px;
+            }
+        }
+
+        .coupon {
+            .input-text {
+                width: 100% !important;
+                float: none;
+            }
+
+            button {
+                float: none;
+                width: 100% !important;
+                margin-top: 7px;
+            }
+        }
+    }
+
+    .woocommerce-product-gallery .flex-control-thumbs {
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .woocommerce div.product div.images .flex-control-thumbs li {
+        width: 25% !important;
+    }
+
     .woocommerce-ordering {
         margin: -.5em 0 1em !important;
         float: none;

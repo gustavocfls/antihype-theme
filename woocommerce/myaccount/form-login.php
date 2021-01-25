@@ -23,7 +23,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 
-<div class="u-columns col2-set row" id="customer_login">
+<div class="u-columns row" id="customer_login">
 
 	<div class="u-column1 col-md-6 entrar">
 
