@@ -2,29 +2,31 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3 menu-footer">
+        <div class="col-md-4 menu-footer">
             <?php dynamic_sidebar('footer-left'); ?>
         </div>
 
-        <div class="col-md-3 menu-footer">
-        <?php dynamic_sidebar('footer-mid'); ?>
+        <div class="col-md-4 menu-footer">
+            <ul>
+                <li><a href="">Sobre a Scafeli</a></li>
+                <li><a href="">Dúvidas / Infos</a></li>
+            </ul>
         </div>
 
-        <div class="col-md-3 menu-footer">
-        <?php dynamic_sidebar('footer-right'); ?>
-        </div>
-
-        <div class="col-md-3 menu-footer">
-        <?php dynamic_sidebar('footer-right'); ?>
+        <div class="col-md-4 menu-footer">
+            <ul>
+                <li><a href="">Ajuda e Suporte</a></li>
+                <li><a href="">Trocas e Devoluções</a></li>
+            </ul>
         </div>
     </div>
 </div>
 
 <div class="container text-center">
     <div class="credits">
-        <p>Banned ─ Loja Exemplo</p>
-        <p>Todo conteúdo pertence aos seus respectivos criadores.</p>
-        <p>Feito com ❤️ por Gustavo Souza</p>
+        <p>2021 © Scafeli ─ 20.330.746/0001-70. Todos os direitos reservados.</p>
+        
+        <p><a target="_blank" href="#">Made with ❤️ by Gustavo S.</a></p>
     </div>
 </div>
 
