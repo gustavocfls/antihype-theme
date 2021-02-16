@@ -1,2 +1,2 @@
-# antihype-theme
+# Banned WooCommerce Theme
  
