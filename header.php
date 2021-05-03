@@ -24,7 +24,7 @@
     
     <a class="navbar-brand" href="<?php bloginfo('home') ?>">
         <!-- <img src="<?php bloginfo('template_url') ?>/img/logo.svg" alt=""> -->
-        Banned
+        Scafeli
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +103,7 @@ if ( class_exists( 'WooCommerce' ) ) { ?>
 
 } else {
     ?>
-    <li>WooCommerce não instalado!</li>
+    <li><img src="<?php bloginfo('template_directory')?>/img/cart.svg" class="fluid-img" alt=""> </li>
 <?php
 }
 ?>

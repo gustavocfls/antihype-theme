@@ -2,9 +2,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 menu-footer">
-            <?php dynamic_sidebar('footer-left'); ?>
-        </div>
+        
 
         <div class="col-md-4 menu-footer">
             <ul>
@@ -19,14 +17,22 @@
                 <li><a href="">Trocas e Devoluções</a></li>
             </ul>
         </div>
+
+        <div class="col-md-4 menu-footer">
+        <p>Meios de pagamento</p>
+        <img src="<?php bloginfo('template_url') ?>/img/mercadopago.png" />
+        </div>
     </div>
 </div>
 
 <div class="container text-center">
     <div class="credits">
+
+    
+    
         <p>2021 © Scafeli ─ 20.330.746/0001-70. Todos os direitos reservados.</p>
         
-        <p><a target="_blank" href="#">Made with ❤️ by Gustavo S.</a></p>
+        <p><a target="_blank" href="https://instagram.com/gustavoscafeli">por Gustavo Scafeli</a></p>
     </div>
 </div>
 

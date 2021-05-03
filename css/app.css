@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-weight: 600;
 }
 
@@ -14,7 +25,11 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
     max-width: 1280px;
   }
 }
@@ -112,7 +127,7 @@ header .customer-menu li a:hover {
 }
 
 .subheader {
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: #f8f8f8;
   text-transform: uppercase;
   font-size: 12px;
@@ -179,12 +194,28 @@ footer .menu-footer h4 {
   margin-bottom: 20px;
 }
 
+footer .menu-footer p {
+  color: #6c757d;
+}
+
+footer .menu-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .menu-footer ul li {
+  list-style: none;
+}
+
 footer .menu-footer ul li a {
   color: #6c757d;
 }
 
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-  background: #0ECC7A;
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background: #0ecc7a;
   width: 100%;
   padding: 15px;
   font-size: 16px;
@@ -193,8 +224,11 @@ footer .menu-footer ul li a {
   transition: all ease 0.3s;
 }
 
-.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
-  background: #0D9F60;
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background: #0d9f60;
 }
 
 .woocommerce #customer_login {
@@ -216,7 +250,7 @@ footer .menu-footer ul li a {
 .woocommerce form.register button {
   width: 100%;
   float: none;
-  background-color: #0ECC7A;
+  background-color: #0ecc7a;
   color: #fff;
   padding: 15px;
   margin-top: 20px;
@@ -252,7 +286,7 @@ footer .menu-footer ul li a {
 .woocommerce form.login button {
   width: 100%;
   float: none;
-  background-color: #0ECC7A;
+  background-color: #0ecc7a;
   color: #fff;
   padding: 15px;
   margin-top: 20px;
@@ -270,7 +304,7 @@ footer .menu-footer ul li a {
 }
 
 .woocommerce .botao-comprar {
-  background: #0ECC7A !important;
+  background: #0ecc7a !important;
   color: #fff !important;
   padding: 15px !important;
   font-weight: 500 !important;
@@ -283,7 +317,7 @@ footer .menu-footer ul li a {
 }
 
 .woocommerce .botao-comprar:hover {
-  background: #0D9F60 !important;
+  background: #0d9f60 !important;
 }
 
 .woocommerce .qty {
@@ -322,7 +356,7 @@ footer .menu-footer ul li a {
 .woocommerce .products li .price {
   color: #777777 !important;
   font-weight: 600 !important;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .woocommerce .products li .button .product_type_simple {
@@ -341,19 +375,20 @@ footer .menu-footer ul li a {
   position: absolute;
   text-align: center;
   line-height: normal;
-  top: -.5em;
-  left: -.5em;
+  top: -0.5em;
+  left: -0.5em;
   margin: 0;
   border-radius: 4px;
   background-color: #0ecc7a;
   text-transform: uppercase;
   color: #fff;
   font-size: 10px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   z-index: 9;
 }
 
-.woocommerce .product p.price, .woocommerce .product span.price {
+.woocommerce .product p.price,
+.woocommerce .product span.price {
   color: #6c757d !important;
 }
 
@@ -382,7 +417,30 @@ footer .menu-footer ul li a {
   margin-left: 10px;
 }
 
-.woocommerce .woocommerce #respond input#submit.alt.disabled, .woocommerce .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce .woocommerce #respond input#submit.alt:disabled, .woocommerce .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce .woocommerce a.button.alt.disabled, .woocommerce .woocommerce a.button.alt.disabled:hover, .woocommerce .woocommerce a.button.alt:disabled, .woocommerce .woocommerce a.button.alt:disabled:hover, .woocommerce .woocommerce a.button.alt:disabled[disabled], .woocommerce .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce .woocommerce button.button.alt.disabled, .woocommerce .woocommerce button.button.alt.disabled:hover, .woocommerce .woocommerce button.button.alt:disabled, .woocommerce .woocommerce button.button.alt:disabled:hover, .woocommerce .woocommerce button.button.alt:disabled[disabled], .woocommerce .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce .woocommerce input.button.alt.disabled, .woocommerce .woocommerce input.button.alt.disabled:hover, .woocommerce .woocommerce input.button.alt:disabled, .woocommerce .woocommerce input.button.alt:disabled:hover, .woocommerce .woocommerce input.button.alt:disabled[disabled], .woocommerce .woocommerce input.button.alt:disabled[disabled]:hover {
+.woocommerce .woocommerce #respond input#submit.alt.disabled,
+.woocommerce .woocommerce #respond input#submit.alt.disabled:hover,
+.woocommerce .woocommerce #respond input#submit.alt:disabled,
+.woocommerce .woocommerce #respond input#submit.alt:disabled:hover,
+.woocommerce .woocommerce #respond input#submit.alt:disabled[disabled],
+.woocommerce .woocommerce #respond input#submit.alt:disabled[disabled]:hover,
+.woocommerce .woocommerce a.button.alt.disabled,
+.woocommerce .woocommerce a.button.alt.disabled:hover,
+.woocommerce .woocommerce a.button.alt:disabled,
+.woocommerce .woocommerce a.button.alt:disabled:hover,
+.woocommerce .woocommerce a.button.alt:disabled[disabled],
+.woocommerce .woocommerce a.button.alt:disabled[disabled]:hover,
+.woocommerce .woocommerce button.button.alt.disabled,
+.woocommerce .woocommerce button.button.alt.disabled:hover,
+.woocommerce .woocommerce button.button.alt:disabled,
+.woocommerce .woocommerce button.button.alt:disabled:hover,
+.woocommerce .woocommerce button.button.alt:disabled[disabled],
+.woocommerce .woocommerce button.button.alt:disabled[disabled]:hover,
+.woocommerce .woocommerce input.button.alt.disabled,
+.woocommerce .woocommerce input.button.alt.disabled:hover,
+.woocommerce .woocommerce input.button.alt:disabled,
+.woocommerce .woocommerce input.button.alt:disabled:hover,
+.woocommerce .woocommerce input.button.alt:disabled[disabled],
+.woocommerce .woocommerce input.button.alt:disabled[disabled]:hover {
   background-color: #909090;
 }
 
@@ -415,7 +473,7 @@ footer .menu-footer ul li a {
 .product .product_meta {
   font-size: 14px;
   text-transform: uppercase;
-  color: #BBBFC3;
+  color: #bbbfc3;
 }
 
 .product .product_meta .sku_wrapper {
@@ -445,7 +503,7 @@ footer .menu-footer ul li a {
 }
 
 .product .product_meta .posted_in a {
-  color: #BBBFC3 !important;
+  color: #bbbfc3 !important;
 }
 
 .product .product_meta .tagged_as {
@@ -462,7 +520,7 @@ footer .menu-footer ul li a {
 }
 
 .product .product_meta .tagged_as a {
-  color: #BBBFC3 !important;
+  color: #bbbfc3 !important;
 }
 
 .product .related {
@@ -570,7 +628,7 @@ button.disabled {
     width: 25% !important;
   }
   .woocommerce-ordering {
-    margin: -.5em 0 1em !important;
+    margin: -0.5em 0 1em !important;
     float: none;
     width: 100%;
   }
