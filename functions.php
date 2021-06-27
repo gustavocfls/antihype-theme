@@ -53,6 +53,9 @@ add_action('wp_enqueue_scripts', 'load_javascript');
 
 
 
+
+
+
 // Add support
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
@@ -129,6 +132,8 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 
 
+
+
 /**
  * Show cart contents / total Ajax
  */
@@ -192,4 +197,23 @@ if (!function_exists('loop_columns')) {
 	function loop_columns() {
 		return 4; // 3 products per row
 	}
+}
+
+
+add_action( 'woocommerce_before_shop_loop_item_title', 'add_on_hover_shop_loop_image' ) ; 
+
+function add_on_hover_shop_loop_image() {
+
+    $image_id = wc_get_product()->get_gallery_image_ids()[0] ; 
+
+    if ( $image_id ) {
+
+        echo wp_get_attachment_image( $image_id, array('370', '490') ) ;
+
+    } else {  //assuming not all products have galleries set
+
+        echo wp_get_attachment_image( wc_get_product()->get_image_id() ) ; 
+
+    }
+
 }

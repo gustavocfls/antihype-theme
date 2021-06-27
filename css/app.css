@@ -34,7 +34,27 @@ img {
   }
 }
 
+.selos {
+  text-align: right;
+}
+
 @media screen and (max-width: 992px) {
+  .credits {
+    text-align: center;
+  }
+  .menu-footer {
+    max-width: 50%;
+  }
+  .menu-footer:first-child {
+    max-width: 45%;
+  }
+  .selos {
+    margin-top: 30px;
+    text-align: center;
+  }
+  footer {
+    padding-bottom: 30px !important;
+  }
   .customer-menu {
     padding: 15px !important;
     background: #f8f9fa;
@@ -54,6 +74,7 @@ header {
 
 header .navbar {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 header .navbar-brand {
@@ -62,7 +83,8 @@ header .navbar-brand {
 }
 
 header .navbar-light .navbar-brand {
-  width: 120px;
+  width: 140px;
+  padding-top: 0;
 }
 
 header .navbar-light .navbar-nav .nav-link {
@@ -143,7 +165,6 @@ header .customer-menu li a:hover {
 
 .hero-home {
   margin-bottom: 3rem;
-  background: url("https://cdn.shopify.com/s/files/1/0242/6047/6980/files/01B1118D-12C3-4F34-988E-49BDD2986AA1_2000x.gif");
   background-position: center;
   background-size: cover;
   min-height: 500px;
@@ -205,10 +226,15 @@ footer .menu-footer ul {
 
 footer .menu-footer ul li {
   list-style: none;
+  margin-bottom: 10px;
 }
 
 footer .menu-footer ul li a {
   color: #6c757d;
+}
+
+footer .footer-selo {
+  margin-bottom: 20px;
 }
 
 .woocommerce #respond input#submit.alt,
@@ -638,4 +664,42 @@ button.disabled {
     padding: 5px 5px;
     border-radius: 5px;
   }
+}
+
+.credits {
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #999;
+}
+
+.credits p {
+  font-size: 12px;
+  color: #999;
+}
+
+/* CUSTOM ON-HOVER IMAGE */
+.woocommerce ul.products li.product a img {
+  /* FORMAT ALL IMAGES TO FILL EQUIVALENT SPACE,
+  to remove jitter on replacement */
+}
+
+.woocommerce ul.products li.product a img:nth-of-type(2) {
+  display: none;
+}
+
+.woocommerce ul.products li.product a:hover img:nth-of-type(2) {
+  display: block;
+}
+
+.woocommerce ul.products li.product a:hover img:nth-of-type(1) {
+  display: none;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }

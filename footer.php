@@ -6,33 +6,45 @@
 
         <div class="col-md-4 menu-footer">
             <ul>
-                <li><a href="">Sobre a Scafeli</a></li>
-                <li><a href="">Dúvidas / Infos</a></li>
+                <li><a href="">Scafeli</a></li>
+                <li><a href="">Camisetas</a></li>
+                <li><a href="">Acessórios</a></li>
+                <li><a href="">Calçados</a></li>
             </ul>
         </div>
 
         <div class="col-md-4 menu-footer">
             <ul>
-                <li><a href="">Ajuda e Suporte</a></li>
+                <li><a href="">Tabela de Medidas</a></li>
+                <li><a href="">Perguntas Frequentes</a></li>                
                 <li><a href="">Trocas e Devoluções</a></li>
+                <li><a href="">Fale Conosco</a></li>
             </ul>
         </div>
 
-        <div class="col-md-4 menu-footer">
-        <p>Meios de pagamento</p>
-        <img src="<?php bloginfo('template_url') ?>/img/mercadopago.png" />
+        <div class="col-md-4 selos">
+
+        <div>
+        <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.scafeli.com.br" target="_blank"><img class="footer-selo" src="<?php bloginfo('template_url') ?>/img/google-safe-browsing.png" /></a>
+        </div>
+
+        <div>
+        <img class="footer-selo" src="<?php bloginfo('template_url') ?>/img/mercadopago.png" />
+        </div>
+
+        
+        
         </div>
     </div>
 </div>
 
-<div class="container text-center">
+<div class="container">
     <div class="credits">
 
     
     
-        <p>2021 © Scafeli ─ 20.330.746/0001-70. Todos os direitos reservados.</p>
+        <p>2021 © Scafeli.</p>
         
-        <p><a target="_blank" href="https://instagram.com/gustavoscafeli">por Gustavo Scafeli</a></p>
     </div>
 </div>
 
